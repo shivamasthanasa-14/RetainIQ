@@ -1,0 +1,3 @@
+# Salesforce integration troubleshooting
+
+Connect Salesforce with a dedicated authorized integration user. Confirm that user can access the target object and required fields. For INVALID_SESSION_ID, reconnect Salesforce from Settings > Integrations and test a single sample record. For field permission errors, ask the Salesforce administrator to verify object and field access. For repeated failures, collect run IDs, error text, last successful run time and scope of impact. Bulk replay, lost data recovery and production outages require engineering review; support must not promise a fix or recommend blind replay.

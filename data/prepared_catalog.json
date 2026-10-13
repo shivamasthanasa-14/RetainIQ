@@ -1,0 +1,1492 @@
+{
+  "version": 1,
+  "entries": {
+    "0365c605693a2e678e2ea044a494be8f11d1c4fae1d83a52c68bdb0c857406b7": {
+      "input": {
+        "subject": "Invite an editor",
+        "message": "I am a workspace Admin. How do I invite our new operations colleague so she can edit workflows but cannot manage billing?"
+      },
+      "case_index": 0,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T00:57:20+00:00",
+      "classification": {
+        "category": "Account Access",
+        "issue_group": "User invitations",
+        "summary": "Workspace admin needs to invite a colleague with edit workflow permissions but no billing access.",
+        "needs_specialist": false,
+        "reason": "Clear invitation request with specific permissions",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Account Access",
+        "issue_group": "User invitations",
+        "summary": "Workspace admin needs to invite a colleague with edit workflow permissions but no billing access.",
+        "needs_specialist": false,
+        "reason": "Clear invitation request with specific permissions",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "To invite a new operations colleague who can edit workflows but not manage billing, you need to select the Editor role. Admins can invite users from Settings > Members > Invite and choose the role. Editors create and edit workflows but cannot manage billing or members. Invitations expire after seven days; you can resend expired invitations from Members.",
+        "source_ids": [
+          "02-account-permissions"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 102.895,
+      "retrieved_documents": [
+        {
+          "id": "02-account-permissions",
+          "title": "Account access and permissions",
+          "text": "# Account access and permissions\n\nWorkspace roles are Owner, Admin, Editor and Viewer. Owners manage billing and transfer ownership. Admins invite users from Settings > Members > Invite and select their role. Editors create and edit workflows but cannot manage billing or members. Viewers can inspect workflows and run history but cannot edit. An Admin or Owner can change roles in Settings > Members. Invitations expire after seven days; resend expired invitations from Members.\n",
+          "score": 0.493
+        },
+        {
+          "id": "05-workflow",
+          "title": "Workflow configuration",
+          "text": "# Workflow configuration\n\nA workflow consists of one trigger followed by actions. Editors and Admins can create workflows from Workflows > New workflow. Add the trigger, map required fields, then add actions. Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Pausing a published workflow stops new runs; existing runs may continue. Do not publish a workflow until its test succeeds.\n",
+          "score": 0.226
+        },
+        {
+          "id": "04-billing",
+          "title": "Subscription and billing policies",
+          "text": "# Subscription and billing policies\n\nSubscriptions are billed monthly or annually according to the signed order. Owners can download invoices and update payment details in Settings > Billing. Support cannot promise refunds, discounts or credits. Refund, cancellation and contract-change requests go to the billing specialist for review against the customer agreement. Do not quote pricing without the applicable agreement. A failed payment notification should be reviewed by the workspace Owner.\n",
+          "score": 0.144
+        }
+      ],
+      "raw_draft": {
+        "id": 0,
+        "supported": true,
+        "body": "To invite a new operations colleague who can edit workflows but not manage billing, you need to select the Editor role. Admins can invite users from Settings > Members > Invite and choose the role. Editors create and edit workflows but cannot manage billing or members. Invitations expire after seven days; you can resend expired invitations from Members.",
+        "source_ids": [
+          "02-account-permissions"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 204.656,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "86ccf2538f07745b5f939afcbeab3e501bcc1028befb40d6e833c0d90a5cc4f3": {
+      "input": {
+        "subject": "Read-only teammate",
+        "message": "Our analyst only needs to inspect workflows and run history. Which role should I pick when inviting him? I am the workspace Owner."
+      },
+      "case_index": 1,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T00:57:20+00:00",
+      "classification": {
+        "category": "Account Access",
+        "issue_group": "User invitations",
+        "summary": "Workspace owner needs role selection for analyst with read-only workflow inspection permissions.",
+        "needs_specialist": false,
+        "reason": "Clear invitation request with specific permissions",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Account Access",
+        "issue_group": "User invitations",
+        "summary": "Workspace owner needs role selection for analyst with read-only workflow inspection permissions.",
+        "needs_specialist": false,
+        "reason": "Clear invitation request with specific permissions",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Select the Viewer role for someone who only needs to inspect workflows and run history. Viewers cannot edit workflows. A workspace Admin can send the invitation from Settings > Members > Invite. An Admin or Owner can change an existing member’s role in Settings > Members. Source: Account access and permissions.",
+        "source_ids": [
+          "02-account-permissions"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 102.895,
+      "retrieved_documents": [
+        {
+          "id": "01-getting-started",
+          "title": "Getting started with RelayOps",
+          "text": "# Getting started with RelayOps\n\nRelayOps automates business workflows using triggers and actions. Create a workspace, invite teammates, connect an integration, then build a draft workflow. Test it with sample data before publishing. Only published workflows run automatically. Workspace settings are available to Admins and Owners.\n",
+          "score": 0.23
+        },
+        {
+          "id": "02-account-permissions",
+          "title": "Account access and permissions",
+          "text": "# Account access and permissions\n\nWorkspace roles are Owner, Admin, Editor and Viewer. Owners manage billing and transfer ownership. Admins invite users from Settings > Members > Invite and select their role. Editors create and edit workflows but cannot manage billing or members. Viewers can inspect workflows and run history but cannot edit. An Admin or Owner can change roles in Settings > Members. Invitations expire after seven days; resend expired invitations from Members.\n",
+          "score": 0.19
+        },
+        {
+          "id": "05-workflow",
+          "title": "Workflow configuration",
+          "text": "# Workflow configuration\n\nA workflow consists of one trigger followed by actions. Editors and Admins can create workflows from Workflows > New workflow. Add the trigger, map required fields, then add actions. Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Pausing a published workflow stops new runs; existing runs may continue. Do not publish a workflow until its test succeeds.\n",
+          "score": 0.127
+        }
+      ],
+      "raw_draft": {
+        "id": 1,
+        "supported": true,
+        "body": "For an analyst who only needs to inspect workflows and run history, select the Viewer role. Viewers can inspect workflows and run history but cannot edit. Admins or Owners can invite users from Settings > Members > Invite and choose the role.",
+        "source_ids": [
+          "02-account-permissions"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 204.656,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Removed an invitation-permission claim not explicitly supported by the source; preserved original model text."
+      ]
+    },
+    "a7c59c958103d12fcd3b869f41ecfbb204bffa2500a0e5e0e5985c9d9dea09b1": {
+      "input": {
+        "subject": "Password link expired",
+        "message": "Hi support, the password reset link from yesterday has expired. This is a password-based account, not SSO. What should I do?"
+      },
+      "case_index": 2,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T00:57:20+00:00",
+      "classification": {
+        "category": "Account Access",
+        "issue_group": "Password reset",
+        "summary": "Password reset link expired for password-based account; needs alternative action.",
+        "needs_specialist": false,
+        "reason": "Ordinary password reset scenario with clear context",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 2,
+        "category": "Account Access",
+        "issue_group": "Password reset",
+        "summary": "Password reset link expired for password-based account; needs alternative action.",
+        "needs_specialist": false,
+        "reason": "Ordinary password reset scenario with clear context",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Request a fresh link using Forgot password on the sign-in page and check your spam folder if the email does not arrive. Password reset links expire after 30 minutes. If access still fails, provide the workspace name, timestamp and exact error text to support; do not share passwords or authentication codes. Source: Sign-in troubleshooting.",
+        "source_ids": [
+          "03-sign-in"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 102.896,
+      "retrieved_documents": [
+        {
+          "id": "03-sign-in",
+          "title": "Sign-in troubleshooting",
+          "text": "# Sign-in troubleshooting\n\nUse the same email address used for the invitation. For password-based accounts, use Forgot password on the sign-in page and check spam for the reset link. Links expire after 30 minutes. If the account uses company SSO, ask the company identity administrator to check access. Do not request passwords or authentication codes. If access still fails, collect the workspace name, timestamp and exact error text for technical support.\n",
+          "score": 0.448
+        }
+      ],
+      "raw_draft": {
+        "id": 2,
+        "supported": true,
+        "body": "For a password-based account, the password reset link expires after 30 minutes. Since the link expired yesterday, you should use the Forgot password option on the sign-in page, check spam for the reset link, or contact your company's identity administrator if using SSO. If access still fails, collect the workspace name, timestamp, and exact error text for technical support.",
+        "source_ids": [
+          "03-sign-in"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 204.656,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Removed irrelevant SSO advice from a request explicitly about password-based sign-in; preserved original model text."
+      ]
+    },
+    "9f01511819e01233fbdd72c433d7fa6eb85dc8aff0d955c5fdc980f7b867b404": {
+      "input": {
+        "subject": "Forgot my password",
+        "message": "I forgot my RelayOps password. Where do I request a reset, and what should I check if the email does not arrive?"
+      },
+      "case_index": 3,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T00:57:20+00:00",
+      "classification": {
+        "category": "Account Access",
+        "issue_group": "Password reset",
+        "summary": "User forgot password and needs reset instructions with email verification steps.",
+        "needs_specialist": false,
+        "reason": "Ordinary password reset request without vague context",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 3,
+        "category": "Account Access",
+        "issue_group": "Password reset",
+        "summary": "User forgot password and needs reset instructions with email verification steps.",
+        "needs_specialist": false,
+        "reason": "Ordinary password reset request without vague context",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Use the Forgot password link on the sign-in page and check spam for the reset link. Links expire after 30 minutes. If the account uses company SSO, ask the company identity administrator to check access. Do not request passwords or authentication codes. If access still fails, collect the workspace name, timestamp and exact error text for technical support.",
+        "source_ids": [
+          "03-sign-in"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 102.896,
+      "retrieved_documents": [
+        {
+          "id": "03-sign-in",
+          "title": "Sign-in troubleshooting",
+          "text": "# Sign-in troubleshooting\n\nUse the same email address used for the invitation. For password-based accounts, use Forgot password on the sign-in page and check spam for the reset link. Links expire after 30 minutes. If the account uses company SSO, ask the company identity administrator to check access. Do not request passwords or authentication codes. If access still fails, collect the workspace name, timestamp and exact error text for technical support.\n",
+          "score": 0.392
+        },
+        {
+          "id": "01-getting-started",
+          "title": "Getting started with RelayOps",
+          "text": "# Getting started with RelayOps\n\nRelayOps automates business workflows using triggers and actions. Create a workspace, invite teammates, connect an integration, then build a draft workflow. Test it with sample data before publishing. Only published workflows run automatically. Workspace settings are available to Admins and Owners.\n",
+          "score": 0.112
+        }
+      ],
+      "raw_draft": {
+        "id": 0,
+        "supported": true,
+        "body": "Use the Forgot password link on the sign-in page and check spam for the reset link. Links expire after 30 minutes. If the account uses company SSO, ask the company identity administrator to check access. Do not request passwords or authentication codes. If access still fails, collect the workspace name, timestamp and exact error text for technical support.",
+        "source_ids": [
+          "03-sign-in"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 157.302,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "b5daaadb0487d938f6510c757fbd35ea0f9ce67e9a4a8f48c13be2e653fec66a": {
+      "input": {
+        "subject": "Company login loop",
+        "message": "The company SSO login sends me back to the identity page after my team changed. I cannot access the workspace. Who needs to investigate?"
+      },
+      "case_index": 4,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:03:14+00:00",
+      "classification": {
+        "category": "Account Access",
+        "issue_group": "SSO access",
+        "summary": "User experiencing SSO login loop after team change preventing workspace access",
+        "needs_specialist": true,
+        "reason": "SSO access issue with login loop",
+        "missing_information": [
+          "Workspace name",
+          "Exact sign-in error",
+          "Company identity administrator access confirmation"
+        ]
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Account Access",
+        "issue_group": "SSO access",
+        "summary": "User experiencing SSO login loop after team change preventing workspace access",
+        "needs_specialist": true,
+        "reason": "SSO access issue with login loop",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 126.052,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    },
+    "f78c33aa8c18e3c3719a46f89fbae80b9c6a4879d031bd52a362709da3e296df": {
+      "input": {
+        "subject": "Invoice for accounting",
+        "message": "I am the workspace Owner. Where can I download the latest invoice for our accountant?"
+      },
+      "case_index": 5,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:03:14+00:00",
+      "classification": {
+        "category": "Billing",
+        "issue_group": "Invoice downloads",
+        "summary": "Workspace Owner requesting latest invoice download for accounting",
+        "needs_specialist": false,
+        "reason": "Ordinary invoice download request",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Billing",
+        "issue_group": "Invoice downloads",
+        "summary": "Workspace Owner requesting latest invoice download for accounting",
+        "needs_specialist": false,
+        "reason": "Ordinary invoice download request",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Owners can download invoices and update payment details in Settings > Billing.",
+        "source_ids": [
+          "04-billing"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 126.053,
+      "retrieved_documents": [
+        {
+          "id": "04-billing",
+          "title": "Subscription and billing policies",
+          "text": "# Subscription and billing policies\n\nSubscriptions are billed monthly or annually according to the signed order. Owners can download invoices and update payment details in Settings > Billing. Support cannot promise refunds, discounts or credits. Refund, cancellation and contract-change requests go to the billing specialist for review against the customer agreement. Do not quote pricing without the applicable agreement. A failed payment notification should be reviewed by the workspace Owner.\n",
+          "score": 0.184
+        }
+      ],
+      "raw_draft": {
+        "id": 1,
+        "supported": true,
+        "body": "Owners can download invoices and update payment details in Settings > Billing.",
+        "source_ids": [
+          "04-billing"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 157.302,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "072de2a9f573d4c27eb9803f5f9a6b0ef0ed9807d1064721823c190b748bd0f7": {
+      "input": {
+        "subject": "Need a bill copy",
+        "message": "Our finance team needs a copy of last month’s subscription invoice. I have Owner access. Can I get it from the workspace?"
+      },
+      "case_index": 6,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:03:14+00:00",
+      "classification": {
+        "category": "Billing",
+        "issue_group": "Invoice downloads",
+        "summary": "Finance team requesting last month's subscription invoice copy from workspace Owner",
+        "needs_specialist": false,
+        "reason": "Owner access to payment details",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 2,
+        "category": "Billing",
+        "issue_group": "Payment details",
+        "summary": "Finance team requesting last month's subscription invoice copy from workspace Owner",
+        "needs_specialist": false,
+        "reason": "Owner access to payment details",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Owners can download invoices and update payment details in Settings > Billing.",
+        "source_ids": [
+          "04-billing"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 126.053,
+      "retrieved_documents": [
+        {
+          "id": "04-billing",
+          "title": "Subscription and billing policies",
+          "text": "# Subscription and billing policies\n\nSubscriptions are billed monthly or annually according to the signed order. Owners can download invoices and update payment details in Settings > Billing. Support cannot promise refunds, discounts or credits. Refund, cancellation and contract-change requests go to the billing specialist for review against the customer agreement. Do not quote pricing without the applicable agreement. A failed payment notification should be reviewed by the workspace Owner.\n",
+          "score": 0.274
+        },
+        {
+          "id": "11-onboarding",
+          "title": "Customer onboarding checklist",
+          "text": "# Customer onboarding checklist\n\nAgree on the first workflow and appoint a workspace Owner and an operational contact. Invite the team with the minimum required roles. Connect a test integration, build a sample workflow and validate sample results before publishing. The support team can arrange an onboarding session; ask for workspace name, intended use case and two preferred time windows. Do not promise a specific appointment until confirmed.\n",
+          "score": 0.15
+        },
+        {
+          "id": "02-account-permissions",
+          "title": "Account access and permissions",
+          "text": "# Account access and permissions\n\nWorkspace roles are Owner, Admin, Editor and Viewer. Owners manage billing and transfer ownership. Admins invite users from Settings > Members > Invite and select their role. Editors create and edit workflows but cannot manage billing or members. Viewers can inspect workflows and run history but cannot edit. An Admin or Owner can change roles in Settings > Members. Invitations expire after seven days; resend expired invitations from Members.\n",
+          "score": 0.121
+        }
+      ],
+      "raw_draft": {
+        "id": 2,
+        "supported": true,
+        "body": "Owners can download invoices and update payment details in Settings > Billing.",
+        "source_ids": [
+          "04-billing"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 157.302,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"issue_group\": \"Invoice downloads\"}"
+      ]
+    },
+    "80ec3f5343c2deb10185ab9ad5f1e0e4f0bca02da494b1720f1a63f45475a721": {
+      "input": {
+        "subject": "Replace payment card",
+        "message": "We have a new company payment card. As the workspace Owner, where can I update payment details?"
+      },
+      "case_index": 7,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:03:14+00:00",
+      "classification": {
+        "category": "Billing",
+        "issue_group": "Payment details",
+        "summary": "Workspace Owner seeking to update company payment card details",
+        "needs_specialist": false,
+        "reason": "Updating payment details as Owner",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 3,
+        "category": "Billing",
+        "issue_group": "Payment details",
+        "summary": "Workspace Owner seeking to update company payment card details",
+        "needs_specialist": false,
+        "reason": "Updating payment details as Owner",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Owners can update payment details in Settings > Billing.",
+        "source_ids": [
+          "04-billing"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 126.053,
+      "retrieved_documents": [
+        {
+          "id": "04-billing",
+          "title": "Subscription and billing policies",
+          "text": "# Subscription and billing policies\n\nSubscriptions are billed monthly or annually according to the signed order. Owners can download invoices and update payment details in Settings > Billing. Support cannot promise refunds, discounts or credits. Refund, cancellation and contract-change requests go to the billing specialist for review against the customer agreement. Do not quote pricing without the applicable agreement. A failed payment notification should be reviewed by the workspace Owner.\n",
+          "score": 0.262
+        }
+      ],
+      "raw_draft": {
+        "id": 0,
+        "supported": true,
+        "body": "Owners can update payment details in Settings > Billing.",
+        "source_ids": [
+          "04-billing"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 122.063,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "4a8619adaa848e95636cbc597398b472cf34d94bb4f75e5ff876c12ca1aceea4": {
+      "input": {
+        "subject": "Annual subscription refund",
+        "message": "We paid annually but are closing a department. Can someone review whether the unused months can be refunded under our agreement?"
+      },
+      "case_index": 8,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:04:59+00:00",
+      "classification": {
+        "category": "Billing",
+        "issue_group": "Contract review",
+        "summary": "Request for refund of unused subscription months due to department closure",
+        "needs_specialist": true,
+        "reason": "Refund request based on contract terms",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Billing",
+        "issue_group": "Contract review",
+        "summary": "Request for refund of unused subscription months due to department closure",
+        "needs_specialist": true,
+        "reason": "Refund request based on contract terms",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 104.625,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "ef095170bdc17e3b699782c9bf15acb3f222cbbf61a07c990b83c9a964fd509b": {
+      "input": {
+        "subject": "Custom renewal terms",
+        "message": "Please give us a binding discount and different renewal payment terms. Our contract needs review before we can approve renewal."
+      },
+      "case_index": 9,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:04:59+00:00",
+      "classification": {
+        "category": "Billing",
+        "issue_group": "Contract review",
+        "summary": "Request for binding discount and custom renewal terms in existing contract",
+        "needs_specialist": true,
+        "reason": "Contract modification request requiring legal review",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Billing",
+        "issue_group": "Contract review",
+        "summary": "Request for binding discount and custom renewal terms in existing contract",
+        "needs_specialist": true,
+        "reason": "Contract modification request requiring legal review",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 104.625,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "190bf06b0cc65461a3bbd84609ce5c8d8462b8188ed2f262253cd4a90fe14c80": {
+      "input": {
+        "subject": "Test before publish",
+        "message": "I saved a workflow with a trigger and two actions. Does saving make it run automatically, or should I test and publish it first?"
+      },
+      "case_index": 10,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:04:59+00:00",
+      "classification": {
+        "category": "Workflow Configuration",
+        "issue_group": "Workflow publishing",
+        "summary": "Clarification on whether saved workflow runs automatically or requires testing/publishing",
+        "needs_specialist": false,
+        "reason": "Product guidance question about workflow activation",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 2,
+        "category": "Workflow Configuration",
+        "issue_group": "Workflow publishing",
+        "summary": "Clarification on whether saved workflow runs automatically or requires testing/publishing",
+        "needs_specialist": false,
+        "reason": "Product guidance question about workflow activation",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Only published workflows run automatically.",
+        "source_ids": [
+          "05-workflow",
+          "01-getting-started"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 104.625,
+      "retrieved_documents": [
+        {
+          "id": "05-workflow",
+          "title": "Workflow configuration",
+          "text": "# Workflow configuration\n\nA workflow consists of one trigger followed by actions. Editors and Admins can create workflows from Workflows > New workflow. Add the trigger, map required fields, then add actions. Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Pausing a published workflow stops new runs; existing runs may continue. Do not publish a workflow until its test succeeds.\n",
+          "score": 0.371
+        },
+        {
+          "id": "01-getting-started",
+          "title": "Getting started with RelayOps",
+          "text": "# Getting started with RelayOps\n\nRelayOps automates business workflows using triggers and actions. Create a workspace, invite teammates, connect an integration, then build a draft workflow. Test it with sample data before publishing. Only published workflows run automatically. Workspace settings are available to Admins and Owners.\n",
+          "score": 0.171
+        },
+        {
+          "id": "11-onboarding",
+          "title": "Customer onboarding checklist",
+          "text": "# Customer onboarding checklist\n\nAgree on the first workflow and appoint a workspace Owner and an operational contact. Invite the team with the minimum required roles. Connect a test integration, build a sample workflow and validate sample results before publishing. The support team can arrange an onboarding session; ask for workspace name, intended use case and two preferred time windows. Do not promise a specific appointment until confirmed.\n",
+          "score": 0.133
+        }
+      ],
+      "raw_draft": {
+        "id": 1,
+        "supported": true,
+        "body": "Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Only published workflows run automatically.",
+        "source_ids": [
+          "05-workflow",
+          "01-getting-started"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 122.063,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "b48b8bc631e9f5adc384ab42260e1646d6080227c3e7826bfeb06988f457ee52": {
+      "input": {
+        "subject": "Pause during maintenance",
+        "message": "We need to stop new workflow runs during maintenance without deleting the workflow. How should we pause it, and what happens to existing runs?"
+      },
+      "case_index": 11,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:04:59+00:00",
+      "classification": {
+        "category": "Workflow Configuration",
+        "issue_group": "Pause workflows",
+        "summary": "Request to pause workflow runs during maintenance without deleting workflow",
+        "needs_specialist": false,
+        "reason": "Standard workflow configuration question",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 3,
+        "category": "Workflow Configuration",
+        "issue_group": "Pause workflows",
+        "summary": "Request to pause workflow runs during maintenance without deleting workflow",
+        "needs_specialist": false,
+        "reason": "Standard workflow configuration question",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Pausing a published workflow stops new runs; existing runs may continue.",
+        "source_ids": [
+          "05-workflow"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 104.625,
+      "retrieved_documents": [
+        {
+          "id": "05-workflow",
+          "title": "Workflow configuration",
+          "text": "# Workflow configuration\n\nA workflow consists of one trigger followed by actions. Editors and Admins can create workflows from Workflows > New workflow. Add the trigger, map required fields, then add actions. Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Pausing a published workflow stops new runs; existing runs may continue. Do not publish a workflow until its test succeeds.\n",
+          "score": 0.454
+        }
+      ],
+      "raw_draft": {
+        "id": 2,
+        "supported": true,
+        "body": "Pausing a published workflow stops new runs; existing runs may continue.",
+        "source_ids": [
+          "05-workflow"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 122.063,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "baa0aece59a5cfd102478f614c3bba016c165403121546b5366394fc55e6c43d": {
+      "input": {
+        "subject": "Missing input field",
+        "message": "The action requires a customer reference but it is missing from the mapping picker. Our trigger sample is old. How can we refresh the sample and remap it?"
+      },
+      "case_index": 12,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:07:06+00:00",
+      "classification": {
+        "category": "Workflow Configuration",
+        "issue_group": "Field mapping",
+        "summary": "Customer reference field is missing from the mapping picker and the trigger sample needs refreshing.",
+        "needs_specialist": false,
+        "reason": "Specific mapping issue with actionable steps for refreshing samples",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Workflow Configuration",
+        "issue_group": "Field mapping",
+        "summary": "Customer reference field is missing from the mapping picker and the trigger sample needs refreshing.",
+        "needs_specialist": false,
+        "reason": "Specific mapping issue with actionable steps for refreshing samples",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Refresh the sample returned by the trigger, then remap the action’s customer reference input to the correct field. Required fields must be present in the sample. Test with a sample record to check the mapping before publishing. Source: Conditions and field mapping.",
+        "source_ids": [
+          "06-conditions"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 127.493,
+      "retrieved_documents": [
+        {
+          "id": "06-conditions",
+          "title": "Conditions and field mapping",
+          "text": "# Conditions and field mapping\n\nUse a condition step to send records down different branches. A condition compares an input field to a chosen value. Map action inputs to fields returned by the trigger or preceding steps. Required fields must be present. Test each branch with sample records, including empty values. If fields are missing, refresh the sample from the trigger and remap inputs. Complex branching design can be reviewed by support.\n",
+          "score": 0.418
+        },
+        {
+          "id": "11-onboarding",
+          "title": "Customer onboarding checklist",
+          "text": "# Customer onboarding checklist\n\nAgree on the first workflow and appoint a workspace Owner and an operational contact. Invite the team with the minimum required roles. Connect a test integration, build a sample workflow and validate sample results before publishing. The support team can arrange an onboarding session; ask for workspace name, intended use case and two preferred time windows. Do not promise a specific appointment until confirmed.\n",
+          "score": 0.127
+        }
+      ],
+      "raw_draft": {
+        "id": 0,
+        "supported": true,
+        "body": "To refresh the sample and remap inputs, you need to refresh the sample from the trigger and remap inputs. This is mentioned in the Conditions and field mapping document.",
+        "source_ids": [
+          "06-conditions"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 125.874,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Replaced tautological wording with the documented sample-refresh, required-field and test steps."
+      ]
+    },
+    "aae6287c907a0b83bf9ce9f778bb062d9b88677d5901b0bf2b56ca7fc848bc7b": {
+      "input": {
+        "subject": "Conditional branches",
+        "message": "We want one branch for larger orders and another for everything else. How do we configure and test conditions, including empty values?"
+      },
+      "case_index": 13,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:07:06+00:00",
+      "classification": {
+        "category": "Workflow Configuration",
+        "issue_group": "Conditional branches",
+        "summary": "Need to configure and test conditions for branch routing based on order size, including handling empty values.",
+        "needs_specialist": false,
+        "reason": "Clear configuration request within workflow rules",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Workflow Configuration",
+        "issue_group": "Conditional branches",
+        "summary": "Need to configure and test conditions for branch routing based on order size, including handling empty values.",
+        "needs_specialist": false,
+        "reason": "Clear configuration request within workflow rules",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Use a condition step to send records down different branches. Conditions compare input fields to chosen values. Test each branch with sample records, including empty values. This is covered in the Conditions and field mapping document.",
+        "source_ids": [
+          "06-conditions"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 127.494,
+      "retrieved_documents": [
+        {
+          "id": "06-conditions",
+          "title": "Conditions and field mapping",
+          "text": "# Conditions and field mapping\n\nUse a condition step to send records down different branches. A condition compares an input field to a chosen value. Map action inputs to fields returned by the trigger or preceding steps. Required fields must be present. Test each branch with sample records, including empty values. If fields are missing, refresh the sample from the trigger and remap inputs. Complex branching design can be reviewed by support.\n",
+          "score": 0.384
+        }
+      ],
+      "raw_draft": {
+        "id": 1,
+        "supported": true,
+        "body": "Use a condition step to send records down different branches. Conditions compare input fields to chosen values. Test each branch with sample records, including empty values. This is covered in the Conditions and field mapping document.",
+        "source_ids": [
+          "06-conditions"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 125.875,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "47aa481e45fc824c2f9430ee8208ac7d2fc3f675bd8a0288b30fbcebf3e33750": {
+      "input": {
+        "subject": "Private Slack channel",
+        "message": "Our Slack action works in a public channel but fails in a private ops channel. Does the RelayOps app need to be invited to the private channel?"
+      },
+      "case_index": 14,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:07:06+00:00",
+      "classification": {
+        "category": "Integrations",
+        "issue_group": "Slack permissions",
+        "summary": "Slack action fails in private channels despite working in public channels; requires channel invitation check.",
+        "needs_specialist": false,
+        "reason": "Integration-specific channel permission issue",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 2,
+        "category": "Integrations",
+        "issue_group": "Slack permissions",
+        "summary": "Slack action fails in private channels despite working in public channels; requires channel invitation check.",
+        "needs_specialist": false,
+        "reason": "Integration-specific channel permission issue",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Private channels require an explicit app invitation. The RelayOps app must be invited to the private Slack channel for the action to work. This is specified in the Slack integration troubleshooting document.",
+        "source_ids": [
+          "07-slack"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 127.494,
+      "retrieved_documents": [
+        {
+          "id": "07-slack",
+          "title": "Slack integration troubleshooting",
+          "text": "# Slack integration troubleshooting\n\nA workspace Admin connects Slack from Settings > Integrations > Slack. Authorize the intended Slack workspace and invite the RelayOps app to the destination channel. Private channels require an explicit app invitation. If authentication expires, reconnect Slack and test the action. For permission errors, collect the error text, channel type and last successful run time. Do not post access tokens in support messages.\n",
+          "score": 0.573
+        }
+      ],
+      "raw_draft": {
+        "id": 2,
+        "supported": true,
+        "body": "Private channels require an explicit app invitation. The RelayOps app must be invited to the private Slack channel for the action to work. This is specified in the Slack integration troubleshooting document.",
+        "source_ids": [
+          "07-slack"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 125.875,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "7b7b08d201d19c3d6443b281eae55bc5e5f8f4d79bd866f6925a971d450e0d2f": {
+      "input": {
+        "subject": "Slack access expired",
+        "message": "Slack authentication expired after an admin account change. How do we reconnect the authorized workspace and test the action?"
+      },
+      "case_index": 15,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:07:06+00:00",
+      "classification": {
+        "category": "Integrations",
+        "issue_group": "Slack authorization",
+        "summary": "Slack authentication expired after admin account change; need to reconnect and test the action.",
+        "needs_specialist": false,
+        "reason": "Authorization refresh after admin change",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 3,
+        "category": "Integrations",
+        "issue_group": "Slack authorization",
+        "summary": "Slack authentication expired after admin account change; need to reconnect and test the action.",
+        "needs_specialist": false,
+        "reason": "Authorization refresh after admin change",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Reconnect Slack from Settings > Integrations > Slack and test the action after authorizing the intended Slack workspace and inviting the RelayOps app to the destination channel. For permission errors, collect the error text, channel type and last successful run time.",
+        "source_ids": [
+          "07-slack"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 127.494,
+      "retrieved_documents": [
+        {
+          "id": "07-slack",
+          "title": "Slack integration troubleshooting",
+          "text": "# Slack integration troubleshooting\n\nA workspace Admin connects Slack from Settings > Integrations > Slack. Authorize the intended Slack workspace and invite the RelayOps app to the destination channel. Private channels require an explicit app invitation. If authentication expires, reconnect Slack and test the action. For permission errors, collect the error text, channel type and last successful run time. Do not post access tokens in support messages.\n",
+          "score": 0.479
+        },
+        {
+          "id": "02-account-permissions",
+          "title": "Account access and permissions",
+          "text": "# Account access and permissions\n\nWorkspace roles are Owner, Admin, Editor and Viewer. Owners manage billing and transfer ownership. Admins invite users from Settings > Members > Invite and select their role. Editors create and edit workflows but cannot manage billing or members. Viewers can inspect workflows and run history but cannot edit. An Admin or Owner can change roles in Settings > Members. Invitations expire after seven days; resend expired invitations from Members.\n",
+          "score": 0.244
+        },
+        {
+          "id": "03-sign-in",
+          "title": "Sign-in troubleshooting",
+          "text": "# Sign-in troubleshooting\n\nUse the same email address used for the invitation. For password-based accounts, use Forgot password on the sign-in page and check spam for the reset link. Links expire after 30 minutes. If the account uses company SSO, ask the company identity administrator to check access. Do not request passwords or authentication codes. If access still fails, collect the workspace name, timestamp and exact error text for technical support.\n",
+          "score": 0.125
+        }
+      ],
+      "raw_draft": {
+        "id": 0,
+        "supported": true,
+        "body": "Reconnect Slack from Settings > Integrations > Slack and test the action after authorizing the intended Slack workspace and inviting the RelayOps app to the destination channel. For permission errors, collect the error text, channel type and last successful run time.",
+        "source_ids": [
+          "07-slack"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 212.534,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Category, handling decision and draft checked against the original request and retrieved company documents."
+      ]
+    },
+    "bd322a06aae10721deb022b7cb75ce2d2d245b5f3bb011fc4c60fd30afd6bc95": {
+      "input": {
+        "subject": "Salesforce test session",
+        "message": "One sample Salesforce test returned INVALID_SESSION_ID. Production is unaffected. What is the supported reconnect procedure?"
+      },
+      "case_index": 16,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:09:08+00:00",
+      "classification": {
+        "category": "Integrations",
+        "issue_group": "Salesforce authorization",
+        "summary": "A Salesforce test session returned an INVALID_SESSION_ID error, requiring a reconnect procedure.",
+        "needs_specialist": false,
+        "reason": "Specific integration issue with Salesforce authorization",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Integrations",
+        "issue_group": "Salesforce authorization",
+        "summary": "A Salesforce test session returned an INVALID_SESSION_ID error, requiring a reconnect procedure.",
+        "needs_specialist": false,
+        "reason": "Specific integration issue with Salesforce authorization",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "For INVALID_SESSION_ID, reconnect Salesforce from Settings > Integrations and test a single sample record. Confirm that the integration user can access the target object and required fields. If failures continue, collect the run ID, exact error text and last successful run time for technical support. Source: Salesforce integration troubleshooting.",
+        "source_ids": [
+          "08-salesforce"
+        ],
+        "missing_information": []
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 121.481,
+      "retrieved_documents": [
+        {
+          "id": "08-salesforce",
+          "title": "Salesforce integration troubleshooting",
+          "text": "# Salesforce integration troubleshooting\n\nConnect Salesforce with a dedicated authorized integration user. Confirm that user can access the target object and required fields. For INVALID_SESSION_ID, reconnect Salesforce from Settings > Integrations and test a single sample record. For field permission errors, ask the Salesforce administrator to verify object and field access. For repeated failures, collect run IDs, error text, last successful run time and scope of impact. Bulk replay, lost data recovery and production outages require engineering review; support must not promise a fix or recommend blind replay.\n",
+          "score": 0.454
+        },
+        {
+          "id": "12-escalation",
+          "title": "Specialist escalation procedure",
+          "text": "# Specialist escalation procedure\n\nEscalate production outages, possible data loss, security incidents and unresolved integration errors. Assign engineering for production incidents, technical support for integration investigation and billing for contract decisions. Record business impact, affected workflow, time of onset, redacted error and last successful run. A human owner decides mitigation and next update time. Never promise recovery or a service-level deadline without a confirmed agreement. Security reports must avoid transmitting secrets.\n",
+          "score": 0.124
+        }
+      ],
+      "raw_draft": {
+        "id": 1,
+        "supported": true,
+        "body": "Reconnect Salesforce from Settings > Integrations and test a single sample record to resolve INVALID_SESSION_ID. For field permission errors, ask the Salesforce administrator to verify object and field access.",
+        "source_ids": [
+          "08-salesforce"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 212.534,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Removed wording that implied a guaranteed fix; retained documented reconnect and investigation steps."
+      ]
+    },
+    "b5c94764431f55788e0a8f5e05c97f42a620ba869d31352fcfdaa274b102489d": {
+      "input": {
+        "subject": "Salesforce production outage",
+        "message": "URGENT: every production Salesforce sync is failing, orders have stopped and records may be missing. We need engineering to investigate before anyone replays the queue."
+      },
+      "case_index": 17,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:09:08+00:00",
+      "classification": {
+        "category": "Integrations",
+        "issue_group": "Production integration incident",
+        "summary": "Production Salesforce sync is failing, causing order blocks and potential record loss.",
+        "needs_specialist": true,
+        "reason": "Production outage with possible data loss",
+        "missing_information": [
+          "Workflow and run IDs",
+          "Exact error text",
+          "Last successful run time",
+          "Scope of business impact"
+        ]
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Product Errors",
+        "issue_group": "Production integration incident",
+        "summary": "Production Salesforce sync is failing, causing order blocks and potential record loss.",
+        "needs_specialist": true,
+        "reason": "Production outage with possible data loss",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 121.481,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"category\": \"Integrations\"}",
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    },
+    "8a62a4b20f4cb111a3b5e7d2313acd6c468f71cd8457eb9f94612b731cf7dc4d": {
+      "input": {
+        "subject": "Order sync down",
+        "message": "Since 09:00, all Salesforce order syncs have failed. This blocks fulfilment for a major customer. We cannot tell which records reached Salesforce. Please escalate."
+      },
+      "case_index": 18,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:09:08+00:00",
+      "classification": {
+        "category": "Integrations",
+        "issue_group": "Production integration incident",
+        "summary": "Salesforce order syncs have failed since 09:00, blocking fulfillment and causing potential record loss.",
+        "needs_specialist": true,
+        "reason": "Production outage with possible data loss",
+        "missing_information": [
+          "Workflow and run IDs",
+          "Exact error text",
+          "Last successful run time",
+          "Scope of business impact"
+        ]
+      },
+      "raw_classification": {
+        "id": 2,
+        "category": "Product Errors",
+        "issue_group": "Production integration incident",
+        "summary": "Salesforce order syncs have failed since 09:00, blocking fulfillment and causing potential record loss.",
+        "needs_specialist": true,
+        "reason": "Production outage with possible data loss",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 121.482,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"category\": \"Integrations\"}",
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    },
+    "ce3a75f87441070c9549570656679f3d55f6433dbd8d516f001063cca6eb143f": {
+      "input": {
+        "subject": "Duplicate order events",
+        "message": "An order appears twice following a webhook timeout. We do not know whether delivery succeeded. Please investigate before replaying production events."
+      },
+      "case_index": 19,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:09:08+00:00",
+      "classification": {
+        "category": "Integrations",
+        "issue_group": "Webhook investigation",
+        "summary": "Duplicate order events occurred after a webhook timeout, requiring investigation before replaying production events.",
+        "needs_specialist": true,
+        "reason": "Duplicate events need investigation",
+        "missing_information": [
+          "Timestamp",
+          "Response status",
+          "Redacted payload",
+          "Affected run IDs"
+        ]
+      },
+      "raw_classification": {
+        "id": 3,
+        "category": "Product Errors",
+        "issue_group": "Run investigation",
+        "summary": "Duplicate order events occurred after a webhook timeout, requiring investigation before replaying production events.",
+        "needs_specialist": true,
+        "reason": "Duplicate events need investigation",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 121.482,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"category\": \"Integrations\", \"issue_group\": \"Webhook investigation\"}",
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    },
+    "906af605f8fa3cdce76899391629d6ada69f74ec68a02fdcf871333ec63fd7d8": {
+      "input": {
+        "subject": "Plan first workflow",
+        "message": "We have just created a workspace. Can support arrange an onboarding session to plan the first workflow? What details should we provide?"
+      },
+      "case_index": 20,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:11:10+00:00",
+      "classification": {
+        "category": "Onboarding",
+        "issue_group": "Onboarding session",
+        "summary": "Requesting an onboarding session to plan the first workflow after creating a workspace.",
+        "needs_specialist": false,
+        "reason": "Customer explicitly asks for an onboarding session and provides context for planning the first workflow.",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Onboarding",
+        "issue_group": "Onboarding session",
+        "summary": "Requesting an onboarding session to plan the first workflow after creating a workspace.",
+        "needs_specialist": false,
+        "reason": "Customer explicitly asks for an onboarding session and provides context for planning the first workflow.",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Support can arrange an onboarding session to help plan your first workflow. Please send the workspace name, intended use case and two preferred time windows. A specific appointment needs separate confirmation. Source: Customer onboarding checklist.",
+        "source_ids": [
+          "11-onboarding"
+        ],
+        "missing_information": [
+          "Workspace name",
+          "Intended use case",
+          "Two preferred time windows"
+        ]
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 122.142,
+      "retrieved_documents": [
+        {
+          "id": "11-onboarding",
+          "title": "Customer onboarding checklist",
+          "text": "# Customer onboarding checklist\n\nAgree on the first workflow and appoint a workspace Owner and an operational contact. Invite the team with the minimum required roles. Connect a test integration, build a sample workflow and validate sample results before publishing. The support team can arrange an onboarding session; ask for workspace name, intended use case and two preferred time windows. Do not promise a specific appointment until confirmed.\n",
+          "score": 0.361
+        },
+        {
+          "id": "05-workflow",
+          "title": "Workflow configuration",
+          "text": "# Workflow configuration\n\nA workflow consists of one trigger followed by actions. Editors and Admins can create workflows from Workflows > New workflow. Add the trigger, map required fields, then add actions. Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Pausing a published workflow stops new runs; existing runs may continue. Do not publish a workflow until its test succeeds.\n",
+          "score": 0.192
+        },
+        {
+          "id": "01-getting-started",
+          "title": "Getting started with RelayOps",
+          "text": "# Getting started with RelayOps\n\nRelayOps automates business workflows using triggers and actions. Create a workspace, invite teammates, connect an integration, then build a draft workflow. Test it with sample data before publishing. Only published workflows run automatically. Workspace settings are available to Admins and Owners.\n",
+          "score": 0.105
+        }
+      ],
+      "raw_draft": {
+        "id": 2,
+        "supported": true,
+        "body": "Provide workspace name, intended use case, and two preferred time windows to arrange an onboarding session. The support team will help plan the first workflow after these details are confirmed.",
+        "source_ids": [
+          "11-onboarding"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 212.534,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Kept scheduling conditional and made the requested onboarding context explicit."
+      ]
+    },
+    "4781a133bb2c367e11db9b8839301a8199d9f5c13a9efd65cadf0111703fc406": {
+      "input": {
+        "subject": "New team onboarding",
+        "message": "Our operations team is new to RelayOps. We would like an onboarding session and help defining the first use case. How can we arrange this?"
+      },
+      "case_index": 21,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:11:10+00:00",
+      "classification": {
+        "category": "Onboarding",
+        "issue_group": "Onboarding session",
+        "summary": "Operations team new to RelayOps needs help defining the first use case and arranging an onboarding session.",
+        "needs_specialist": false,
+        "reason": "Customer explicitly requests an onboarding session for a new team and help defining the first use case.",
+        "missing_information": []
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Onboarding",
+        "issue_group": "Onboarding session",
+        "summary": "Operations team new to RelayOps needs help defining the first use case and arranging an onboarding session.",
+        "needs_specialist": false,
+        "reason": "Customer explicitly requests an onboarding session for a new team and help defining the first use case.",
+        "missing_information": []
+      },
+      "draft": {
+        "supported": true,
+        "body": "Support can arrange an onboarding session to help plan your first workflow. Please send the workspace name, intended use case and two preferred time windows. A specific appointment needs separate confirmation. Source: Customer onboarding checklist.",
+        "source_ids": [
+          "11-onboarding"
+        ],
+        "missing_information": [
+          "Workspace name",
+          "Intended use case",
+          "Two preferred time windows"
+        ]
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 122.143,
+      "retrieved_documents": [
+        {
+          "id": "11-onboarding",
+          "title": "Customer onboarding checklist",
+          "text": "# Customer onboarding checklist\n\nAgree on the first workflow and appoint a workspace Owner and an operational contact. Invite the team with the minimum required roles. Connect a test integration, build a sample workflow and validate sample results before publishing. The support team can arrange an onboarding session; ask for workspace name, intended use case and two preferred time windows. Do not promise a specific appointment until confirmed.\n",
+          "score": 0.466
+        },
+        {
+          "id": "05-workflow",
+          "title": "Workflow configuration",
+          "text": "# Workflow configuration\n\nA workflow consists of one trigger followed by actions. Editors and Admins can create workflows from Workflows > New workflow. Add the trigger, map required fields, then add actions. Save as Draft and use Test with sample data. Review test results in Run history before selecting Publish. Pausing a published workflow stops new runs; existing runs may continue. Do not publish a workflow until its test succeeds.\n",
+          "score": 0.117
+        }
+      ],
+      "raw_draft": {
+        "id": 0,
+        "supported": true,
+        "body": "The support team can arrange an onboarding session. Please provide your workspace name, intended use case, and two preferred time windows for the session.",
+        "source_ids": [
+          "11-onboarding"
+        ],
+        "missing_information": []
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 91.647,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Kept scheduling conditional and made the requested onboarding context explicit."
+      ]
+    },
+    "93de0b3f3c750698be50eab3d3b9f0b9345c1ee25a95777f3e34b541629a170f": {
+      "input": {
+        "subject": "It stopped again",
+        "message": "It is broken again this morning. I do not know which workflow or integration failed, and I have no error message. Can someone help work out what information is needed?"
+      },
+      "case_index": 22,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:11:10+00:00",
+      "classification": {
+        "category": "Other",
+        "issue_group": "Unclear request",
+        "summary": "Customer reports workflow or integration failure without specific error details or workflow identification.",
+        "needs_specialist": true,
+        "reason": "Customer describes a production issue but lacks specific details to identify the cause, requiring specialist investigation.",
+        "missing_information": [
+          "Workflow or integration name",
+          "Timestamp",
+          "Exact error text"
+        ]
+      },
+      "raw_classification": {
+        "id": 2,
+        "category": "Product Errors",
+        "issue_group": "Unclear request",
+        "summary": "Customer reports workflow or integration failure without specific error details or workflow identification.",
+        "needs_specialist": true,
+        "reason": "Customer describes a production issue but lacks specific details to identify the cause, requiring specialist investigation.",
+        "missing_information": [
+          "Which workflow or integration failed",
+          "Error message"
+        ]
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 122.143,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"category\": \"Other\"}",
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    },
+    "2329a25ce88b655cad48e93c5f1b65c02450f2713202eed30059463654ccaddb": {
+      "input": {
+        "subject": "Unfamiliar workspace member",
+        "message": "An unfamiliar person appears in our members list. We suspect unauthorized access and need a specialist to review this with the workspace Owner."
+      },
+      "case_index": 23,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:11:10+00:00",
+      "classification": {
+        "category": "Account Access",
+        "issue_group": "Security incident",
+        "summary": "Unfamiliar member detected in workspace, suspected unauthorized access requiring specialist review with workspace owner.",
+        "needs_specialist": true,
+        "reason": "Suspected unauthorized access indicates a security incident needing specialist review.",
+        "missing_information": [
+          "Workspace name",
+          "Unfamiliar member identifier",
+          "Time first observed"
+        ]
+      },
+      "raw_classification": {
+        "id": 3,
+        "category": "Account Access",
+        "issue_group": "Security incident",
+        "summary": "Unfamiliar member detected in workspace, suspected unauthorized access requiring specialist review with workspace owner.",
+        "needs_specialist": true,
+        "reason": "Suspected unauthorized access indicates a security incident needing specialist review.",
+        "missing_information": []
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 122.143,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    },
+    "1009ee1760bb5d859bdb7551b38927af5a4eebdbaa5afe672e11de47bb742ed4": {
+      "input": {
+        "subject": "Handwritten contracts",
+        "message": "Can RelayOps read handwritten scanned contracts, translate them into Japanese and sign them automatically? I cannot find documentation for this."
+      },
+      "case_index": 24,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:12:25+00:00",
+      "classification": {
+        "category": "Product Guidance",
+        "issue_group": "Unsupported feature",
+        "summary": "Customer asks if RelayOps can read handwritten contracts, translate to Japanese, and sign them automatically without documentation.",
+        "needs_specialist": true,
+        "reason": "Requested capability has no supporting company documentation; individual review is required.",
+        "missing_information": [
+          "Documentation for contract processing capabilities"
+        ]
+      },
+      "raw_classification": {
+        "id": 0,
+        "category": "Product Errors",
+        "issue_group": "Unclear request",
+        "summary": "Customer asks if RelayOps can read handwritten contracts, translate to Japanese, and sign them automatically without documentation.",
+        "needs_specialist": false,
+        "reason": "Customer is asking about capabilities that are not documented and not within RelayOps' scope.",
+        "missing_information": [
+          "Documentation for contract processing capabilities"
+        ]
+      },
+      "draft": {
+        "supported": false,
+        "body": "",
+        "source_ids": [],
+        "missing_information": [
+          "No supporting company documentation for the requested capability"
+        ]
+      },
+      "reviewed": true,
+      "classification_batch_seconds": 74.607,
+      "retrieved_documents": [
+        {
+          "id": "01-getting-started",
+          "title": "Getting started with RelayOps",
+          "text": "# Getting started with RelayOps\n\nRelayOps automates business workflows using triggers and actions. Create a workspace, invite teammates, connect an integration, then build a draft workflow. Test it with sample data before publishing. Only published workflows run automatically. Workspace settings are available to Admins and Owners.\n",
+          "score": 0.194
+        },
+        {
+          "id": "03-sign-in",
+          "title": "Sign-in troubleshooting",
+          "text": "# Sign-in troubleshooting\n\nUse the same email address used for the invitation. For password-based accounts, use Forgot password on the sign-in page and check spam for the reset link. Links expire after 30 minutes. If the account uses company SSO, ask the company identity administrator to check access. Do not request passwords or authentication codes. If access still fails, collect the workspace name, timestamp and exact error text for technical support.\n",
+          "score": 0.165
+        }
+      ],
+      "raw_draft": {
+        "id": 1,
+        "supported": false,
+        "body": "",
+        "source_ids": [],
+        "missing_information": [
+          "RelayOps does not read handwritten contracts, translate them into Japanese, or sign them automatically."
+        ]
+      },
+      "draft_attempted": true,
+      "draft_batch_seconds": 91.647,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"category\": \"Product Guidance\", \"issue_group\": \"Unsupported feature\", \"needs_specialist\": true, \"reason\": \"Requested capability has no supporting company documentation; individual review is required.\"}",
+        "The raw draft correctly withheld an answer. Reworded its missing-information field to describe lack of documentation rather than claim feature absence."
+      ]
+    },
+    "f3aef830bc46d7c1a5f747e39a53e8c97c94616b704e8e2fa007972384b1b438": {
+      "input": {
+        "subject": "Missing production records",
+        "message": "Following a failed production run several customer records appear to be missing. Please involve a person to investigate. We have not retried or deleted anything."
+      },
+      "case_index": 25,
+      "provider": "ollama/qwen3:4b",
+      "generated_at": "2026-10-13T01:12:25+00:00",
+      "classification": {
+        "category": "Product Errors",
+        "issue_group": "Run investigation",
+        "summary": "Customer reports missing customer records after a failed production run with no retried or deleted data.",
+        "needs_specialist": true,
+        "reason": "Missing records after production run indicates possible data loss requiring specialist investigation.",
+        "missing_information": [
+          "Run IDs",
+          "Redacted examples of missing records",
+          "Failure timestamp",
+          "Last successful run time"
+        ]
+      },
+      "raw_classification": {
+        "id": 1,
+        "category": "Product Errors",
+        "issue_group": "Production integration incident",
+        "summary": "Customer reports missing customer records after a failed production run with no retried or deleted data.",
+        "needs_specialist": true,
+        "reason": "Missing records after production run indicates possible data loss requiring specialist investigation.",
+        "missing_information": [
+          "Details of the failed production run",
+          "Evidence of missing records"
+        ]
+      },
+      "draft": null,
+      "reviewed": true,
+      "classification_batch_seconds": 74.607,
+      "reviewed_at": "2026-10-13T10:07:24+00:00",
+      "reviewed_by": "Codex build operator",
+      "review_notes": [
+        "Development correction: {\"issue_group\": \"Run investigation\"}",
+        "Added source-supported investigation details to collect; raw model output remains unchanged."
+      ]
+    }
+  },
+  "review_disclosure": "Development review performed by Codex. Raw model outputs are preserved. Employee per-ticket approval is separate."
+}
